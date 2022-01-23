@@ -12,4 +12,4 @@ func connected():
 remote func begin_game():
 	get_tree().change_scene("res://Scenes/Game.tscn")
 
-# Alex le plus beau
+# Tim le plus beau
