@@ -11,3 +11,5 @@ func connected():
 
 remote func begin_game():
 	get_tree().change_scene("res://Scenes/Game.tscn")
+
+#caca boudin
