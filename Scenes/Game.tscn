@@ -4,545 +4,775 @@
 [ext_resource path="res://herbe.tres" type="SpriteFrames" id=2]
 
 [node name="Game" type="Node2D"]
-position = Vector2( 40, 16 )
+position = Vector2( 8, 16 )
 script = ExtResource( 1 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 32, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
-position = Vector2( 32, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite7" type="AnimatedSprite" parent="."]
-position = Vector2( 32, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite8" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite9" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite10" type="AnimatedSprite" parent="."]
-position = Vector2( 224, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite11" type="AnimatedSprite" parent="."]
-position = Vector2( 288, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite12" type="AnimatedSprite" parent="."]
-position = Vector2( 352, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite13" type="AnimatedSprite" parent="."]
-position = Vector2( 224, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite14" type="AnimatedSprite" parent="."]
-position = Vector2( 288, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite15" type="AnimatedSprite" parent="."]
-position = Vector2( 352, 96 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite16" type="AnimatedSprite" parent="."]
-position = Vector2( 224, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite17" type="AnimatedSprite" parent="."]
-position = Vector2( 288, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite18" type="AnimatedSprite" parent="."]
-position = Vector2( 352, 160 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite19" type="AnimatedSprite" parent="."]
-position = Vector2( 416, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite20" type="AnimatedSprite" parent="."]
-position = Vector2( 480, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite21" type="AnimatedSprite" parent="."]
-position = Vector2( 544, 32 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite22" type="AnimatedSprite" parent="."]
-position = Vector2( 416, 96 )
-frames = ExtResource( 2 )
 
 [node name="AnimatedSprite23" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 96 )
 frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="."]
+position = Vector2( 224, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="."]
+position = Vector2( 288, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="."]
+position = Vector2( 352, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="."]
+position = Vector2( 224, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite14" type="AnimatedSprite" parent="."]
+position = Vector2( 288, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite15" type="AnimatedSprite" parent="."]
+position = Vector2( 352, 96 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite16" type="AnimatedSprite" parent="."]
+position = Vector2( 224, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite17" type="AnimatedSprite" parent="."]
+position = Vector2( 288, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite18" type="AnimatedSprite" parent="."]
+position = Vector2( 352, 160 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite19" type="AnimatedSprite" parent="."]
+position = Vector2( 416, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite20" type="AnimatedSprite" parent="."]
+position = Vector2( 480, 32 )
+frames = ExtResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite21" type="AnimatedSprite" parent="."]
+position = Vector2( 544, 32 )
+frames = ExtResource( 2 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite22" type="AnimatedSprite" parent="."]
+position = Vector2( 416, 96 )
+frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite24" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 96 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite25" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite26" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite27" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite28" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite29" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite30" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite31" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 96 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite32" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 96 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite33" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 96 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite34" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite35" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite36" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 160 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite37" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite38" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite39" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 32 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite40" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 96 )
 frames = ExtResource( 2 )
-
-[node name="AnimatedSprite41" type="AnimatedSprite" parent="."]
-position = Vector2( 864, 96 )
-frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite42" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 96 )
 frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite41" type="AnimatedSprite" parent="."]
+position = Vector2( 864, 96 )
+frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite43" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 160 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite44" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 160 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite45" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 160 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite46" type="AnimatedSprite" parent="."]
 position = Vector2( 32, 224 )
 frames = ExtResource( 2 )
-
-[node name="AnimatedSprite47" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 224 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite48" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 224 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite49" type="AnimatedSprite" parent="."]
-position = Vector2( 32, 288 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite50" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 288 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite51" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 288 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite52" type="AnimatedSprite" parent="."]
-position = Vector2( 32, 352 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite53" type="AnimatedSprite" parent="."]
-position = Vector2( 96, 352 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite54" type="AnimatedSprite" parent="."]
-position = Vector2( 160, 352 )
-frames = ExtResource( 2 )
-
-[node name="AnimatedSprite55" type="AnimatedSprite" parent="."]
-position = Vector2( 224, 224 )
-frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite56" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 224 )
 frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite47" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 224 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite48" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 224 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite49" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 288 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite50" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 288 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite51" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 288 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite52" type="AnimatedSprite" parent="."]
+position = Vector2( 32, 352 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite53" type="AnimatedSprite" parent="."]
+position = Vector2( 96, 352 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite54" type="AnimatedSprite" parent="."]
+position = Vector2( 160, 352 )
+frames = ExtResource( 2 )
+playing = true
+
+[node name="AnimatedSprite55" type="AnimatedSprite" parent="."]
+position = Vector2( 224, 224 )
+frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite57" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 224 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite58" type="AnimatedSprite" parent="."]
 position = Vector2( 224, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite59" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite60" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite61" type="AnimatedSprite" parent="."]
 position = Vector2( 224, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite62" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite63" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite64" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite65" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite66" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite67" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite68" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite69" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite70" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite71" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite72" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite73" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite74" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite75" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 224 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite76" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite77" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite78" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 288 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite79" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite80" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 352 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite81" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 352 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite82" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 224 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite83" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 224 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite84" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 224 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite85" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite86" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite87" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 288 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite88" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 352 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite89" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 352 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite90" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 352 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite91" type="AnimatedSprite" parent="."]
 position = Vector2( 32, 416 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite92" type="AnimatedSprite" parent="."]
 position = Vector2( 96, 416 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite93" type="AnimatedSprite" parent="."]
 position = Vector2( 160, 416 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite94" type="AnimatedSprite" parent="."]
 position = Vector2( 32, 480 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite95" type="AnimatedSprite" parent="."]
 position = Vector2( 96, 480 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite96" type="AnimatedSprite" parent="."]
 position = Vector2( 160, 480 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite97" type="AnimatedSprite" parent="."]
 position = Vector2( 32, 544 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite98" type="AnimatedSprite" parent="."]
 position = Vector2( 96, 544 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite99" type="AnimatedSprite" parent="."]
 position = Vector2( 160, 544 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite100" type="AnimatedSprite" parent="."]
 position = Vector2( 224, 416 )
 frames = ExtResource( 2 )
+playing = true
 
 [node name="AnimatedSprite101" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite102" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite103" type="AnimatedSprite" parent="."]
 position = Vector2( 224, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite104" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite105" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite106" type="AnimatedSprite" parent="."]
 position = Vector2( 224, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite107" type="AnimatedSprite" parent="."]
 position = Vector2( 288, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite108" type="AnimatedSprite" parent="."]
 position = Vector2( 352, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite109" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite110" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite111" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite112" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite113" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite114" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite115" type="AnimatedSprite" parent="."]
 position = Vector2( 416, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite116" type="AnimatedSprite" parent="."]
 position = Vector2( 480, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite117" type="AnimatedSprite" parent="."]
 position = Vector2( 544, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite118" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite119" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite120" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite121" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite122" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite123" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite124" type="AnimatedSprite" parent="."]
 position = Vector2( 608, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite125" type="AnimatedSprite" parent="."]
 position = Vector2( 672, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite126" type="AnimatedSprite" parent="."]
 position = Vector2( 736, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite127" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite128" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite129" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 416 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite130" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite131" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite132" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 480 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite133" type="AnimatedSprite" parent="."]
 position = Vector2( 800, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite134" type="AnimatedSprite" parent="."]
 position = Vector2( 864, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
 
 [node name="AnimatedSprite135" type="AnimatedSprite" parent="."]
 position = Vector2( 928, 544 )
 frames = ExtResource( 2 )
+frame = 2
+playing = true
