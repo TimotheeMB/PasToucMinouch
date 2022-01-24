@@ -8,6 +8,7 @@ func initialize(id):
 	name = str(id)
 	if id == Net.net_id:
 		is_master = true
+		$Camera2D.current = true
 	else:
 		modulate = Color8(255, 0, 0, 255)
 	#print("Player name is " + name)
