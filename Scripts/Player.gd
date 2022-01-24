@@ -2,19 +2,17 @@ extends KinematicBody2D
 
 const SPEED = 200
 
-var is_master = false
 
 func initialize(id):
 	name = str(id)
-	if id == Net.net_id:
-		is_master = true
+	if id == get_tree().get_network_unique_id():
 		$Camera2D.current = true
 	else:
 		modulate = Color8(255, 0, 0, 255)
 	#print("Player name is " + name)
 
 func _physics_process(delta):
-	if is_master:
+	if is_network_master():
 		var velocity = Vector2()
 		if Input.is_action_pressed("ui_right"):
 			velocity.x = 1
