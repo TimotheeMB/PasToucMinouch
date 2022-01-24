@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	Net.set_ids()
 	create_player(Net.net_id)
 	rpc("create_player",Net.net_id)
 
