@@ -5,6 +5,7 @@ const SPEED = 200
 
 func initialize(id):
 	name = str(id)
+	set_network_master(id)
 	if id == get_tree().get_network_unique_id():
 		$Camera2D.current = true
 	else:
