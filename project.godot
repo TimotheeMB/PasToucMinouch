@@ -12,15 +12,19 @@ config_version=4
 
 config/name="PasTouchMinouch"
 run/main_scene="res://Scenes/Lobby.tscn"
-config/icon="res://Images/icon.png"
+config/icon="res://icon.png"
 
 [autoload]
 
 Net="*res://Scripts/network.gd"
+PluginSettings="*res://addons/github-integration/scripts/PluginSettings.gd"
+IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
+UserData="*res://addons/github-integration/scripts/user_data.gd"
+RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray(  )
+enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
 
 [importer_defaults]
 
