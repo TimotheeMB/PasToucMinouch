@@ -31,5 +31,5 @@ func _on_Host_pressed():
 
 
 func _on_Join_pressed():
-	Net.initialize_client($IP.text)
+	Net.initialize_client($CanvasLayer/UI/Join/IP.text)
 	$CanvasLayer/UI.visible = false
