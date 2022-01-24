@@ -1,8 +1,7 @@
 extends Node2D
 
-
-
 func _ready():
+	get_tree().connect("connected_to_server", self, "connected")
 	Net.set_ids()
 	create_players()
 
@@ -16,3 +15,6 @@ func create_player(id):
 	var p = preload("res://Scenes/Player.tscn").instance()
 	add_child(p)
 	p.initialize(id)
+
+func connected():
+	print("new player")

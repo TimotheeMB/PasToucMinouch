@@ -11,10 +11,6 @@ func connected():
 remote func begin_game():
 	get_tree().change_scene("res://Scenes/Game.tscn")
 
- 
+
 func _on_Host_pressed():
-	pass # Replace with function body.
-
-
-func _on_Join_pressed():
-	pass # Replace with function body.
+	begin_game()

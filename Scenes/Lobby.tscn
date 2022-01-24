@@ -86,5 +86,4 @@ valign = 1
 [connection signal="pressed" from="Host" to="." method="_on_Host_pressed"]
 [connection signal="set_connect_type" from="Host" to="Connecting" method="set_connect_type"]
 [connection signal="pressed" from="Join" to="Join" method="_pressed"]
-[connection signal="pressed" from="Join" to="." method="_on_Join_pressed"]
 [connection signal="set_connect_type" from="Join" to="Connecting" method="set_connect_type"]
