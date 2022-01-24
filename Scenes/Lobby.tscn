@@ -93,7 +93,7 @@ playing = true
 position = Vector2( 288, 96 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Background"]
@@ -107,60 +107,59 @@ playing = true
 position = Vector2( 96, 288 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 96 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 96 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 288 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 288 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
+frame = 2
 playing = true
 
 [node name="AnimatedSprite17" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 480 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite18" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 480 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
+frame = 2
 playing = true
 
 [node name="AnimatedSprite19" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 672 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
+frame = 2
 playing = true
 
 [node name="AnimatedSprite20" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 672 )
 scale = Vector2( 3, 3 )
 frames = ExtResource( 3 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite21" type="AnimatedSprite" parent="Background"]
@@ -209,7 +208,7 @@ shape = SubResource( 2 )
 position = Vector2( 384, 445.334 )
 shape = SubResource( 2 )
 
-[connection signal="pressed" from="CanvasLayer/UI/Host" to="CanvasLayer/UI/Host" method="host"]
 [connection signal="pressed" from="CanvasLayer/UI/Host" to="." method="_on_Host_pressed"]
-[connection signal="pressed" from="CanvasLayer/UI/Join" to="CanvasLayer/UI/Join" method="_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/Host" to="CanvasLayer/UI/Host" method="host"]
 [connection signal="pressed" from="CanvasLayer/UI/Join" to="." method="_on_Join_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/Join" to="CanvasLayer/UI/Join" method="_pressed"]

@@ -20,14 +20,16 @@ func _connected_to_server() -> void:
 
 func create_player(id):
 	var p = player.instance()
-	p.initialize(id)
 	add_child(p)
+	p.initialize(id)
 
 
 func _on_Host_pressed():
+	Net.initialize_server()
 	create_player(get_tree().get_network_unique_id())
 	$CanvasLayer/UI.visible = false
 
 
 func _on_Join_pressed():
+	Net.initialize_client($IP.text)
 	$CanvasLayer/UI.visible = false

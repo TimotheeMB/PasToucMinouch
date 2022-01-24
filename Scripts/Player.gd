@@ -10,7 +10,6 @@ func initialize(id):
 		$Camera2D.current = true
 	else:
 		modulate = Color8(255, 0, 0, 255)
-	#print("Player name is " + name)
 
 func _physics_process(delta):
 	if is_network_master():

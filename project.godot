@@ -20,7 +20,7 @@ Net="*res://Scripts/network.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [importer_defaults]
 
