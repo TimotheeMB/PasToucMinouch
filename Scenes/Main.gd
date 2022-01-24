@@ -9,13 +9,7 @@ func _ready() -> void:
 
 
 func _player_connected(id) -> void:
-	print("Player " + str(id) + " has connected")
 	create_player(id)
-
-
-func _connected_to_server() -> void:
-	yield(get_tree().create_timer(0.1), "timeout")
-	create_player(get_tree().get_network_unique_id())
 
 
 func create_player(id):
@@ -32,4 +26,5 @@ func _on_Host_pressed():
 
 func _on_Join_pressed():
 	Net.initialize_client($CanvasLayer/UI/Join/IP.text)
+	create_player(get_tree().get_network_unique_id())
 	$CanvasLayer/UI.visible = false

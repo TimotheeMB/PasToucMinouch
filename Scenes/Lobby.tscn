@@ -209,6 +209,4 @@ position = Vector2( 384, 445.334 )
 shape = SubResource( 2 )
 
 [connection signal="pressed" from="CanvasLayer/UI/Host" to="." method="_on_Host_pressed"]
-[connection signal="pressed" from="CanvasLayer/UI/Host" to="CanvasLayer/UI/Host" method="host"]
 [connection signal="pressed" from="CanvasLayer/UI/Join" to="." method="_on_Join_pressed"]
-[connection signal="pressed" from="CanvasLayer/UI/Join" to="CanvasLayer/UI/Join" method="_pressed"]
