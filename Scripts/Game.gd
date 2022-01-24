@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	get_tree().connect("connected_to_server", self, "connected")
+	get_tree().connect("network_peer_connected", self, "new_player")
 	Net.set_ids()
 	create_players()
 
@@ -16,5 +16,5 @@ func create_player(id):
 	add_child(p)
 	p.initialize(id)
 
-func connected():
+func new_player():
 	print("new player")
