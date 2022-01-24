@@ -5,7 +5,7 @@ var player = preload("res://Scenes/Player.tscn")
 
 func _ready() -> void:
 	get_tree().connect("network_peer_connected", self, "_player_connected")
-	get_tree().connect("connected_to_server", self, "_connected_to_server")
+
 
 
 func _player_connected(id) -> void:

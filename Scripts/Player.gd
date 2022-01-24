@@ -13,30 +13,23 @@ func initialize(id):
 
 func _physics_process(delta):
 	if is_network_master():
-		var velocity = Vector2()
-		if Input.is_action_pressed("ui_right"):
-			velocity.x = 1
-		elif Input.is_action_pressed("ui_left"):
-			velocity.x = -1
-		else:
-			velocity.x = 0
-		if Input.is_action_pressed("ui_down"):
-			velocity.y = 1
-		elif Input.is_action_pressed("ui_up"):
-			velocity.y = -1
-		else:
-			velocity.y = 0
+		var x_input = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
+		var y_input = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
 		
-		velocity = velocity.normalized()*SPEED
-		move_and_slide(velocity)
-		if velocity != Vector2(0,0):
-			$Sprite.rotation = velocity.angle()+PI/2
+		var dir = Vector2(x_input, y_input).normalized().rotated(rotation+PI/2)
+		
+		move_and_slide(dir * SPEED)
+		
+		look_at(get_global_mouse_position())
+
+		if dir != Vector2(0,0):
 			$Sprite.speed_scale = 1
 		else:
 			$Sprite.speed_scale = 0
-		rpc_unreliable("update_position", position,$Sprite.rotation,$Sprite.speed_scale)
+			
+		rpc_unreliable("update_position", position,rotation,$Sprite.speed_scale)
 
 remote func update_position(pos,rot,sp):
 	position = pos
-	$Sprite.rotation = rot
+	rotation = rot
 	$Sprite.speed_scale = sp

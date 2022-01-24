@@ -14,5 +14,5 @@ func initialize_server():
 func initialize_client(server_ip):
 	var peer = NetworkedMultiplayerENet.new()
 	peer.create_client(server_ip, RPC_PORT)
-
+	get_tree().network_peer = peer
 
