@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
-[ext_resource path="res://herbe.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://Images/herbe.tres" type="SpriteFrames" id=2]
 
 [node name="Game" type="Node2D"]
 position = Vector2( 32, 16 )
