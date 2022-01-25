@@ -11,7 +11,7 @@ func initialize(id):
 	else:
 		modulate = Color8(255, 0, 0, 255)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if is_network_master():
 		var x_input = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 		var y_input = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
