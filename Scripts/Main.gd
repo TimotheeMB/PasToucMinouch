@@ -41,12 +41,12 @@ func _on_Join_pressed():
 
 func _on_Timer_timeout():
 	pass
-#	if Net.is_host:
-#		var e = enemy.instance()
-#		add_enemy(e)
-#		e.position = Vector2(randf()*300,randf()*300)
-#		if nb_of_player > 1:
-#			rpc("add_enemy",e)
+	if get_tree().is_network_server():
+		var e = enemy.instance()
+		add_enemy(e)
+		e.position = Vector2(randf()*300,randf()*300)
+		if nb_of_player > 1:
+			rpc("add_enemy",e)
 
 remote func add_enemy(e):
 	$Enemies.add_child(e)
