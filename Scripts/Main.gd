@@ -2,9 +2,11 @@ extends Node2D
 
 
 var player = preload("res://Scenes/Player.tscn")
+var enemy = preload("res://Scenes/Enemy.tscn")
 
 func _ready() -> void:
 	get_tree().connect("network_peer_connected", self, "_player_connected")
+	randomize()
 
 
 
@@ -28,3 +30,9 @@ func _on_Join_pressed():
 	Net.initialize_client($CanvasLayer/UI/Join/IP.text)
 	create_player(get_tree().get_network_unique_id())
 	$CanvasLayer/UI.visible = false
+
+
+func _on_Timer_timeout():
+	var e = enemy.instance()
+	add_child(e)
+	e.position = Vector2(randf()*300,randf()*300)
