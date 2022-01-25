@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Scripts/HostButton.gd" type="Script" id=1]
-[ext_resource path="res://Scripts/JoinButton.gd" type="Script" id=2]
-[ext_resource path="res://Images/herbe.tres" type="SpriteFrames" id=3]
-[ext_resource path="res://Scripts/Main.gd" type="Script" id=4]
+[ext_resource path="res://Images/herbe.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://Scripts/HostButton.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/JoinButton.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/Background.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 392 )
@@ -12,7 +13,7 @@ extents = Vector2( 10, 392 )
 extents = Vector2( 397.333, 10 )
 
 [node name="Main" type="Node2D"]
-script = ExtResource( 4 )
+script = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -29,7 +30,7 @@ margin_top = 96.0
 margin_right = 634.0
 margin_bottom = 158.0
 text = "Host"
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -49,7 +50,7 @@ margin_top = 288.0
 margin_right = 638.0
 margin_bottom = 350.0
 text = "Join"
-script = ExtResource( 2 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -81,113 +82,96 @@ __meta__ = {
 }
 
 [node name="Background" type="Node2D" parent="."]
+script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Background"]
 position = Vector2( 96, 96 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Background"]
 position = Vector2( 288, 96 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 1
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Background"]
 position = Vector2( 288, 288 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
+frames = ExtResource( 1 )
 frame = 1
-playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="Background"]
 position = Vector2( 96, 288 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 96 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
+frames = ExtResource( 1 )
 frame = 1
-playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 96 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-playing = true
+frames = ExtResource( 1 )
+frame = 1
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 288 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-playing = true
+frames = ExtResource( 1 )
+frame = 2
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 288 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite17" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 480 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-playing = true
+frames = ExtResource( 1 )
+frame = 2
 
 [node name="AnimatedSprite18" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 480 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
+frame = 1
 
 [node name="AnimatedSprite19" type="AnimatedSprite" parent="Background"]
 position = Vector2( 672, 672 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite20" type="AnimatedSprite" parent="Background"]
 position = Vector2( 480, 672 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 1
-playing = true
+frames = ExtResource( 1 )
 
 [node name="AnimatedSprite21" type="AnimatedSprite" parent="Background"]
 position = Vector2( 96, 480 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-playing = true
+frames = ExtResource( 1 )
+frame = 2
 
 [node name="AnimatedSprite22" type="AnimatedSprite" parent="Background"]
 position = Vector2( 288, 480 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
+frame = 1
 
 [node name="AnimatedSprite23" type="AnimatedSprite" parent="Background"]
 position = Vector2( 288, 672 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 2
-playing = true
+frames = ExtResource( 1 )
+frame = 1
 
 [node name="AnimatedSprite24" type="AnimatedSprite" parent="Background"]
 position = Vector2( 96, 672 )
 scale = Vector2( 3, 3 )
-frames = ExtResource( 3 )
-frame = 1
-playing = true
+frames = ExtResource( 1 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Background"]
 position = Vector2( -18.6667, 328 )
