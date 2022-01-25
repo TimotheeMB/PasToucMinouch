@@ -44,5 +44,5 @@ func _on_Timer_timeout():
 		if nb_of_player > 1:
 			rpc("add_enemy",e)
 
-func add_enemy(enemy):
-	$Enemies.add_child(enemy)
+remote func add_enemy(e):
+	$Enemies.add_child(e)
