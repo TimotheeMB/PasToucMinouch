@@ -196,6 +196,8 @@ shape = SubResource( 2 )
 wait_time = 3.0
 autostart = true
 
+[node name="Enemies" type="Node2D" parent="."]
+
 [connection signal="pressed" from="CanvasLayer/UI/Host" to="." method="_on_Host_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/Join" to="." method="_on_Join_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
