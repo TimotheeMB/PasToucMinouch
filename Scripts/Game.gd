@@ -3,7 +3,7 @@ extends Node2D
 func _ready():
 	get_tree().connect("network_peer_connected",self,"create_player")
 	get_tree().connect("connected_to_server",self,"_connected_to_server")
-	if Net.is_host:
+	if get_tree().is_network_server():
 		create_player(get_tree().get_network_unique_id())
 		
 func create_players():

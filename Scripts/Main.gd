@@ -13,8 +13,11 @@ func _ready() -> void:
 
 
 func _player_connected(id) -> void:
-	create_player(id)
-	nb_of_player += 1
+	if id <1:
+		print("wierd id :", id)
+	else:
+		create_player(id)
+		nb_of_player += 1
 
 
 func create_player(id):
