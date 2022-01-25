@@ -40,13 +40,10 @@ func _on_Join_pressed():
 
 
 func _on_Timer_timeout():
-	pass
 	if get_tree().is_network_server():
-		var e = enemy.instance()
-		add_enemy(e)
-		e.position = Vector2(randf()*300,randf()*300)
-		if nb_of_player > 1:
-			rpc("add_enemy",e)
+		rpc("add_enemy",Vector2(randf()*300,randf()*300))
 
-remote func add_enemy(e):
+remotesync func add_enemy(pos):
+	var e = enemy.instance()
+	e.position = pos
 	$Enemies.add_child(e)
