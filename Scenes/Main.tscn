@@ -4,7 +4,7 @@
 [ext_resource path="res://Scripts/HostButton.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/JoinButton.gd" type="Script" id=4]
-[ext_resource path="res://Scenes/Background.gd" type="Script" id=5]
+[ext_resource path="res://Scripts/Background.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 392 )
@@ -197,6 +197,8 @@ wait_time = 3.0
 autostart = true
 
 [node name="Enemies" type="Node2D" parent="."]
+
+[node name="Players" type="Node2D" parent="."]
 
 [connection signal="pressed" from="CanvasLayer/UI/Host" to="." method="_on_Host_pressed"]
 [connection signal="pressed" from="CanvasLayer/UI/Join" to="." method="_on_Join_pressed"]

@@ -22,7 +22,7 @@ func _player_connected(id) -> void:
 
 func create_player(id):
 	var p = player.instance()
-	add_child(p)
+	$Players.add_child(p)
 	p.initialize(id)
 
 
@@ -40,10 +40,12 @@ func _on_Join_pressed():
 
 
 func _on_Timer_timeout():
-	if get_tree().is_network_server():
+	if Net.is_host:
 		rpc("add_enemy",Vector2(randf()*300,randf()*300))
 
 remotesync func add_enemy(pos):
 	var e = enemy.instance()
 	e.position = pos
+	for player in $Players.get_children():
+		e.targets.append(player)
 	$Enemies.add_child(e)
