@@ -1,7 +1,10 @@
 extends KinematicBody2D
 
-const SPEED = 200
+const SPEED = 50
 
+export(Resource) var bonome_monte
+export(Resource) var bonome_descend
+export(Resource) var bonome_profil
 
 func initialize(id):
 	name = str(id)
@@ -16,13 +19,30 @@ func _physics_process(_delta):
 		var x_input = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
 		var y_input = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
 		
-		var dir = Vector2(x_input, y_input).normalized().rotated(rotation+PI/2)
+		var dir = Vector2(x_input, y_input).normalized()
 		
 		move_and_slide(dir * SPEED)
 		
-		look_at(get_global_mouse_position())
 
-		if dir != Vector2(0,0):
+		if dir == Vector2(0,1):
+			$Sprite.flip_h = false
+			if $Sprite.frames != bonome_descend:
+				$Sprite.frames = bonome_descend
+			$Sprite.speed_scale = 1
+		elif dir == Vector2(1,0):
+			$Sprite.flip_h = false
+			if $Sprite.frames != bonome_profil:
+				$Sprite.frames = bonome_profil
+			$Sprite.speed_scale = 1
+		elif dir == Vector2(0,-1):
+			$Sprite.flip_h = false
+			if $Sprite.frames != bonome_monte:
+				$Sprite.frames = bonome_monte
+			$Sprite.speed_scale = 1
+		elif dir == Vector2(-1,0):
+			$Sprite.flip_h = true
+			if $Sprite.frames != bonome_profil:
+				$Sprite.frames = bonome_profil
 			$Sprite.speed_scale = 1
 		else:
 			$Sprite.speed_scale = 0
