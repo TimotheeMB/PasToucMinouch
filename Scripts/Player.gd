@@ -23,29 +23,31 @@ func _physics_process(_delta):
 		
 		move_and_slide(dir * SPEED)
 		
-
+		if dir == Vector2(0,0):
+			$Sprite.speed_scale = 0
+			$Particles2D.emitting = false
+		else:
+			$Sprite.speed_scale = 1
+			$Particles2D.emitting = true
+			$Particles2D.process_material.set_direction(Vector3(-dir.x,-dir.y,0))
+			
 		if dir == Vector2(0,1):
 			$Sprite.flip_h = false
 			if $Sprite.frames != bonome_descend:
 				$Sprite.frames = bonome_descend
-			$Sprite.speed_scale = 1
 		elif dir == Vector2(1,0):
 			$Sprite.flip_h = false
 			if $Sprite.frames != bonome_profil:
 				$Sprite.frames = bonome_profil
-			$Sprite.speed_scale = 1
 		elif dir == Vector2(0,-1):
 			$Sprite.flip_h = false
 			if $Sprite.frames != bonome_monte:
 				$Sprite.frames = bonome_monte
-			$Sprite.speed_scale = 1
 		elif dir == Vector2(-1,0):
 			$Sprite.flip_h = true
 			if $Sprite.frames != bonome_profil:
 				$Sprite.frames = bonome_profil
-			$Sprite.speed_scale = 1
-		else:
-			$Sprite.speed_scale = 0
+
 			
 		rpc_unreliable("update_position", position,rotation,$Sprite.speed_scale)
 
