@@ -63,9 +63,11 @@ func _input(event):
 		for enemy in enemies_in_range:
 			enemy.queue_free()
 
-func _on_Area2D_body_entered(body):
+
+func _on_AttackZone_body_entered(body):
 	if body is Enemy:
 		enemies_in_range.append(body)
-func _on_Area2D_body_exited(body):
+
+func _on_AttackZone_body_exited(body):
 	if body is Enemy:
 		enemies_in_range.erase(body)
