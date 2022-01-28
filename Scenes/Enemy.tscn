@@ -1,12 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Images/chamallow.tres" type="SpriteFrames" id=1]
-[ext_resource path="res://Scenes/Enemy.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Enemy.gd" type="Script" id=2]
 
-[node name="Enemy" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id=1]
+height = 8.74048
+
+[node name="Enemy" type="KinematicBody2D"]
 script = ExtResource( 2 )
 
 [node name="icon" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = ExtResource( 1 )
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.445953, 2.30409 )
+shape = SubResource( 1 )

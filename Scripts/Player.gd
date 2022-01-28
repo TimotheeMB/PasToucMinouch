@@ -6,6 +6,8 @@ export(Resource) var bonome_monte
 export(Resource) var bonome_descend
 export(Resource) var bonome_profil
 
+var enemies_in_range:Array
+
 func initialize(id):
 	name = str(id)
 	set_network_master(id)
@@ -55,3 +57,15 @@ remote func update_position(pos,rot,sp):
 	position = pos
 	rotation = rot
 	$Sprite.speed_scale = sp
+
+func _input(event):
+	if event.is_action_pressed("left_click"):
+		for enemy in enemies_in_range:
+			enemy.queue_free()
+
+func _on_Area2D_body_entered(body):
+	if body is Enemy:
+		enemies_in_range.append(body)
+func _on_Area2D_body_exited(body):
+	if body is Enemy:
+		enemies_in_range.erase(body)

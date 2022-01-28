@@ -11,7 +11,6 @@ func _ready() -> void:
 	randomize()
 
 
-
 func _player_connected(id) -> void:
 	if id <1:
 		print("wierd id :", id)
@@ -24,7 +23,6 @@ func create_player(id):
 	var p = player.instance()
 	$Players.add_child(p)
 	p.initialize(id)
-
 
 
 func _on_Host_pressed():
@@ -42,6 +40,7 @@ func _on_Join_pressed():
 func _on_Timer_timeout():
 	if Net.is_host:
 		rpc("add_enemy",Vector2(randf()*300,randf()*300))
+
 
 remotesync func add_enemy(pos):
 	var e = enemy.instance()

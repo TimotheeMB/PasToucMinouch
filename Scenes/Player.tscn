@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Images/bonhomme1.tres" type="SpriteFrames" id=2]
@@ -7,7 +7,7 @@
 [ext_resource path="res://Images/bonome descand.tres" type="SpriteFrames" id=5]
 [ext_resource path="res://Images/black_pixel.png" type="Texture" id=6]
 
-[sub_resource type="ParticlesMaterial" id=2]
+[sub_resource type="ParticlesMaterial" id=1]
 lifetime_randomness = 0.48
 emission_shape = 1
 emission_sphere_radius = 1.87
@@ -19,9 +19,12 @@ initial_velocity = 28.89
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 6.62387
 height = 3.56762
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 28.408
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -36,7 +39,7 @@ lifetime = 0.5
 speed_scale = 0.57
 explosiveness = 0.92
 randomness = 0.74
-process_material = SubResource( 2 )
+process_material = SubResource( 1 )
 texture = ExtResource( 6 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
@@ -51,4 +54,12 @@ zoom = Vector2( 0.5, 0.5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -3.57628e-07, -2.38419e-07 )
 rotation = 1.57337
-shape = SubResource( 1 )
+shape = SubResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 3 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
