@@ -1,13 +1,13 @@
-extends Node2D
+extends KinematicBody2D
 class_name Enemy
 
 var targets:Array
-var speed = 0.3
+var speed = 20
 
 
 func _physics_process(delta):
 	if closest_target()!=null:
-		position = position + (closest_target().position - position).normalized()*speed
+		move_and_slide((closest_target().position - position).normalized()*speed)
 	
 func closest_target():
 	var closest_target = null
